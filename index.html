@@ -104,14 +104,14 @@
   /* ---------- Beton-Section ---------- */
   .concrete{position:relative;background:#c8c6c3 url("images/wand.jpg") center/cover no-repeat;}
   .concrete::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(0,0,0,.05));pointer-events:none;}
-  .section-pad{padding:90px 120px;position:relative;z-index:2;}
+  .section-pad{max-width:1180px;margin:0 auto;padding:90px 40px;position:relative;z-index:2;}
 
   .sec-head{font-size:28px;font-weight:800;letter-spacing:1px;color:var(--dark);text-transform:uppercase;}
   .underline{width:230px;height:3px;background:var(--cyan);margin:16px 0 34px;}
   .lead{max-width:830px;font-size:22px;line-height:1.55;color:#3a3a3a;}
 
   /* ---------- Die Macher Team ---------- */
-  .team{display:flex;gap:120px;padding-left:130px;margin-top:64px;}
+  .team{display:flex;gap:130px;justify-content:center;margin-top:64px;}
   .member{text-align:center;transition:transform .35s ease;}
   .member:hover{transform:translateY(-8px);}
   .member .photo{width:210px;height:250px;margin:0 auto 20px;border-radius:4px;overflow:hidden;background:#d2d0cd;box-shadow:0 8px 22px rgba(0,0,0,.14);transition:box-shadow .35s ease;}
@@ -147,7 +147,7 @@
   .card-body p{margin-bottom:12px;}
 
   /* ---------- Netzwerk Logos ---------- */
-  .logo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:50px 40px;align-items:center;margin-top:56px;max-width:980px;}
+  .logo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:50px 40px;align-items:center;margin:56px auto 0;max-width:980px;}
   .logo-grid .cell{display:flex;align-items:center;justify-content:center;min-height:90px;}
   .logo-grid img{max-width:200px;max-height:80px;width:auto;height:auto;object-fit:contain;}
   .logo-grid .txtlogo{font-size:26px;font-weight:800;color:#333;letter-spacing:-.5px;}
