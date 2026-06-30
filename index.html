@@ -63,7 +63,13 @@
   .hero img.bg{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:0;}
   .hero .shade{position:absolute;inset:0;background:linear-gradient(100deg, rgba(30,30,32,.40) 0%, rgba(30,30,32,.05) 55%);z-index:1;}
   .hero-main{min-height:740px;}
-  .hero-band{min-height:520px;}
+  .hero-band{min-height:560px;}
+
+  /* Weiche Überblendung der Foto-Bänder in den Beton */
+  .hero-band::before,.hero-band::after{content:"";position:absolute;left:0;width:100%;height:150px;z-index:2;pointer-events:none;}
+  .hero-band::before{top:0;background:linear-gradient(to bottom, #c9c7c4 0%, rgba(201,199,196,.55) 45%, rgba(201,199,196,0) 100%);}
+  .hero-band::after{bottom:0;background:linear-gradient(to top, #c9c7c4 0%, rgba(201,199,196,.55) 45%, rgba(201,199,196,0) 100%);}
+  .hero-main::after{content:"";position:absolute;bottom:0;left:0;width:100%;height:140px;z-index:2;pointer-events:none;background:linear-gradient(to top, #c9c7c4 0%, rgba(201,199,196,0) 100%);}
 
   .hero-nav{position:absolute;left:248px;top:300px;z-index:5;display:flex;flex-direction:column;gap:13px;}
   .hero-band .hero-nav{left:120px;top:150px;}
@@ -309,7 +315,7 @@
 
   <!-- NETZWERK HERO BAND -->
   <header class="hero hero-band">
-    <img class="bg" src="images/netzwerk.jpg" alt="kobalt im Treppenhaus">
+    <img class="bg" src="images/netzwerk.jpg" alt="kobalt im Treppenhaus" style="object-position:center 32%;">
     <div class="shade"></div>
     <nav class="hero-nav">
       <a href="#macher">Die Macher</a>
